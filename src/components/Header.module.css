@@ -1,0 +1,23 @@
+.header {
+    background: var(--gray-700);
+    height: 12.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+strong{
+    margin-right: 0.2rem;
+}
+
+.to{
+    font-size: 2.5rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+.do{
+    font-size: 2.5rem;
+    color: var(--purple-dark);
+    font-weight: bold;
+}
