@@ -1,0 +1,86 @@
+
+.toDoList {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.toDoBox {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.toDoBox div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.checkbox {
+    appearance: none;
+    background: transparent;
+    border: 2px solid var(--blue);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 999px;
+    position: relative;
+    transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
+
+.checkbox:hover {
+    border: 2px solid var(--blue-dark);
+}
+
+.checkbox:checked {
+    background-color: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}
+
+.checkbox:checked:hover {
+    background-color: var(--purple);
+    border: 2px solid var(--purple);
+}
+
+.checkbox:checked::after {
+    content: "✔"; /* Ícone de check */
+    color: var(--gray-100);
+    font-size: 0.9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    font-size: 1.5rem;
+    background: transparent;
+    border: 0;
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out
+}
+
+
+
+.btn:hover {
+    color: var(--danger);
+    background: var(--gray-400);
+    border-radius: 4px;
+}
+
+
+.completedTask{
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
